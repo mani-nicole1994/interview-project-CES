@@ -1,0 +1,30 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">User Id</th>
+      <th scope="col">Employee Code</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Preferred Name</th>
+      <th scope="col">Job Title</th>
+      <th scope="col">Region</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Email Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employeeDataTable | paginate: config; index as i ">
+      <th scope="row">{{employee.userId}}</th>
+      <td>{{employee.employeeCode}}</td>
+      <td>{{employee.firstName}}</td>
+      <td>{{employee.lastName}}</td>
+      <td>{{employee.preferredFullName}}</td>
+      <td>{{employee.jobTitleName}}</td>
+      <td>{{employee.region}}</td>
+      <td>{{employee.phoneNumber}}</td>
+      <td>{{employee.emailAddress}}</td>
+    </tr>
+  </tbody>
+</table>
+<app-pagination [tableCongig]="config"></app-pagination>
+

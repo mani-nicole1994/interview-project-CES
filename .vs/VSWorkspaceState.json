@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\data-table",
+    "\\src\\app\\data-table\\employee-data-table",
+    "\\src\\app\\data-table\\pagination-data-table",
+    "\\src\\app\\data-table\\product-data-table",
+    "\\src\\app\\tabs",
+    "\\src\\assets",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\environments\\environment.prod.ts",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,18 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prod of productTableData | paginate: config; index as i">
+      <th scope="row">{{prod.Name}}</th>
+      <td>{{prod.Price}}</td>
+      <td>{{prod.Catagory}}</td>
+    </tr>
+  </tbody>
+</table>
+<app-pagination [tableCongig]="config"></app-pagination>
+

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  tableData: 'https://www.cityelectricsupply.com/projects/DataExample.json',
+  tableMetaData: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1057059/colors.json'
 };
 
 /*

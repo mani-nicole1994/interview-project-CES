@@ -1,0 +1,10 @@
+<div class="data-table">
+  <app-employee-data-table [employeeDataTable]="employeeData"
+                           *ngIf="isEmployeeOrProduct === 'Employee'">
+  </app-employee-data-table>
+  <app-product-data-table [productTableData]="productData"
+                          *ngIf="isEmployeeOrProduct === 'Product'">
+  </app-product-data-table>
+</div>
+
+
